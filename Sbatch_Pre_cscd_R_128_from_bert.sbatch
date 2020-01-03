@@ -3,10 +3,10 @@
 #SBATCH -N 1
 #SBATCH -J pre_R_cscd
 
-/public/software/deeplearning/anaconda3/bin/python3 run_pretraining.py\
+/public/software/deeplearning/anaconda3/bin/python3 run_pretraining_gpu_v2.py\
  --input_file=/public/home/zzx6320/lh/Projects/bert/data/cscibert_pre_training/pre_training_R_cscd_128.tfrecord\
- --bert_config_file=/public/home/zzx6320/lh/Projects/bert/models/chinese_L-12_H-768_A-12/bert_config.json\
- --init_checkpoint=/public/home/zzx6320/lh/Projects/bert/models/chinese_L-12_H-768_A-12/bert_model.ckpt\
+ --bert_config_file=/public/home/zzx6320/lh/Projects/bert/models/chinese_L-12_H-768_A-12/chinese_L-12_H-768_A-12/bert_config.json\
+ --init_checkpoint=/public/home/zzx6320/lh/Projects/bert/models/chinese_L-12_H-768_A-12/chinese_L-12_H-768_A-12/bert_model.ckpt\
  --output_dir=/public/home/zzx6320/lh/Projects/bert/outputs/Pre_cscd_R_128_from_bert\
  --max_seq_length=128\
  --do_train=True\
