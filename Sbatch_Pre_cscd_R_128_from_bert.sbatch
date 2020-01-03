@@ -15,5 +15,5 @@
  --learning_rate=2e-5\
  --num_train_steps=800000\
  --save_checkpoints_steps=10000\
- --n_gpus=4^
+ --n_gpus=4
 
