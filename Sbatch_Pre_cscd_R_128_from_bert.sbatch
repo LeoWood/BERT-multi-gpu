@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH -p listshow
+#SBATCH -p test2
 #SBATCH -N 1
 #SBATCH -J pre_R_cscd
 
