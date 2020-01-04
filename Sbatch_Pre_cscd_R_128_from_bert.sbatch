@@ -4,7 +4,7 @@
 #SBATCH -J pre_multi_gpus
 #SBATCH -o Pre_test_cscd_R_128_from_bert.out
 
-/public/software/deeplearning/anaconda3/bin/python3 run_pretraining_gpu_v2.py\
+python run_pretraining_gpu_v2.py\
  --input_file=/public/home/zzx6320/lh/Projects/bert/data/cscibert_pre_training/pre_training_R_cscd_128.tfrecord\
  --bert_config_file=/public/home/zzx6320/lh/Projects/bert/models/chinese_L-12_H-768_A-12/chinese_L-12_H-768_A-12/bert_config.json\
  --init_checkpoint=/public/home/zzx6320/lh/Projects/bert/models/chinese_L-12_H-768_A-12/chinese_L-12_H-768_A-12/bert_model.ckpt\
