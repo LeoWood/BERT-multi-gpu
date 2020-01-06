@@ -1,11 +1,13 @@
 #!/bin/bash
 #SBATCH -p normal
 #SBATCH -N 1
-#SBATCH -J pre_multi_gpus
+#SBATCH -J test_pre_multi_gpus
 #SBATCH -o Pre_test_cscd_R_128_from_bert.out
 
 export MIOPEN_USER_DB_PATH=/tmp/tensorflow-miopen-${USER}-2.8
 export MIOPEN_DEBUG_DISABLE_FIND_DB=1
+export CUDA_VISIBLE_DEVICES=0,1,2,3
+
 python run_pretraining_gpu_v2.py\
  --input_file=/public/home/zzx6320/lh/Projects/bert/data/cscibert_pre_training/pre_training_R_cscd_128.tfrecord\
  --bert_config_file=/public/home/zzx6320/lh/Projects/bert/models/chinese_L-12_H-768_A-12/chinese_L-12_H-768_A-12/bert_config.json\
