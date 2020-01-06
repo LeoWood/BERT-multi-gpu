@@ -12,7 +12,7 @@ python run_pretraining_gpu_v2.py\
  --max_seq_length=128\
  --do_train=True\
  --do_eval=True\
- --train_batch_size=32\
+ --train_batch_size=16\
  --learning_rate=2e-5\
  --num_train_steps=800000\
  --save_checkpoints_steps=10000\
