@@ -8,7 +8,7 @@ export MIOPEN_USER_DB_PATH=/tmp/tensorflow-miopen-${USER}-2.8
 export MIOPEN_DEBUG_DISABLE_FIND_DB=1
 export CUDA_VISIBLE_DEVICES=0,1,2,3
 
-python run_pretraining_gpu_v2.py\
+python run_pretraining_gpu.py\
  --input_file=/public/home/zzx6320/lh/Projects/bert/data/cscibert_pre_training/pre_training_R_cscd_128.tfrecord\
  --bert_config_file=/public/home/zzx6320/lh/Projects/bert/models/chinese_L-12_H-768_A-12/chinese_L-12_H-768_A-12/bert_config.json\
  --init_checkpoint=/public/home/zzx6320/lh/Projects/bert/models/chinese_L-12_H-768_A-12/chinese_L-12_H-768_A-12/bert_model.ckpt\
